@@ -1,9 +1,16 @@
-# padel
-Robot padel
+# padel selenium
+Container pour exécuter des robots selenium en python
+
+Image utlisés
+  Alpine
+  Selenium 
+  Firefox
+  Python + library 
 
 
 https://labs.play-with-docker.com/
 
+Utilisation VM Azure pour création de l'image
 Cnx Putty
 
 Utiliser Putty gen
@@ -14,11 +21,7 @@ configurer putty en utilisant le fichier généré (*.ppk) en le paramétrant da
 touch a
 -> copier dans a : git clone https//.....(prendre l'adresse dans github)
 $(cat a)
-cd padel
-docker image build -t aaadur/padel .
+cd padelselenium
+docker image build -t aaadur/padelselenium .
 docker login -u a...
-docker image push aaadur/padel
-
-
-Heure été fr - 2h : FR 00h00 = utc 22h00
-Heure hivers FR - 1h: FR 00h00 = utc 23h00
+docker image push aaadur/padelselenium
