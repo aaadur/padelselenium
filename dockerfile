@@ -8,7 +8,7 @@ COPY requirements.txt /requirements.txt
 RUN apk --update add --no-cache g++ \
     gcc musl-dev python3-dev libffi-dev openssl-dev cargo py3-pip
 
-RUN pip install -U pip
+#RUN pip install -U pip
 
 RUN pip install --target=/install -r /requirements.txt
 #RUN pip install --install-option="--prefix='/install'" -r /requirements.txt
